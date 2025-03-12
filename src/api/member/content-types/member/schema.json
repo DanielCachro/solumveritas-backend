@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\+48 \\d{3} \\d{3} \\d{3}$",
+      "default": "+48 XXX XXX XXX"
+    },
+    "operationalArea": {
+      "type": "customField",
+      "default": "[]",
+      "options": [
+        "Dolnośląskie  ",
+        "Kujawsko-Pomorskie  ",
+        "Lubelskie  ",
+        "Lubuskie  ",
+        "Łódzkie  ",
+        "Małopolskie  ",
+        "Mazowieckie  ",
+        "Opolskie  ",
+        "Podkarpackie  ",
+        "Podlaskie  ",
+        "Pomorskie  ",
+        "Śląskie  ",
+        "Świętokrzyskie  ",
+        "Warmińsko-Mazurskie  ",
+        "Wielkopolskie  ",
+        "Zachodniopomorskie  "
+      ],
+      "required": true,
+      "min": 1,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "UID": {
+      "type": "customField",
+      "required": true,
+      "customField": "plugin::strapi-advanced-uuid.uuid",
+      "options": {
+        "disable-regenerate": true
+      }
+    }
+  }
+}

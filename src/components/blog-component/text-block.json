@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blog_component_text_blocks",
+  "info": {
+    "displayName": "TextBlock",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
