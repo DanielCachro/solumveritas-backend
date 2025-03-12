@@ -25,12 +25,6 @@
         "files"
       ]
     },
-    "readTimeInMinutes": {
-      "type": "integer",
-      "required": true,
-      "default": 0,
-      "min": 0
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -40,8 +34,13 @@
       "type": "dynamiczone",
       "components": [
         "blog-component.text-block",
-        "blog-component.image"
+        "blog-component.image",
+        "blog-component.pure-text"
       ]
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }

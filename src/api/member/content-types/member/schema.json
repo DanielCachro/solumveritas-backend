@@ -54,13 +54,22 @@
       "type": "text",
       "required": true
     },
-    "UID": {
+    "UUID": {
       "type": "customField",
       "required": true,
       "customField": "plugin::strapi-advanced-uuid.uuid",
       "options": {
         "disable-regenerate": true
       }
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

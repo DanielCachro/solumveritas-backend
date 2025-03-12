@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blog_component_pure_texts",
+  "info": {
+    "displayName": "PureText",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
