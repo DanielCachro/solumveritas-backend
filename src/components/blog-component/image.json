@@ -2,17 +2,19 @@
   "collectionName": "components_blog_component_images",
   "info": {
     "displayName": "Image",
-    "icon": "picture"
+    "icon": "picture",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

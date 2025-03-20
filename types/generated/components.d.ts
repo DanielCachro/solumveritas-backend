@@ -3,11 +3,13 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface BlogComponentImage extends Struct.ComponentSchema {
   collectionName: 'components_blog_component_images';
   info: {
+    description: '';
     displayName: 'Image';
     icon: 'picture';
   };
   attributes: {
-    image: Schema.Attribute.Media<'files' | 'images'>;
+    image: Schema.Attribute.Media<'files' | 'images'> &
+      Schema.Attribute.Required;
   };
 }
 

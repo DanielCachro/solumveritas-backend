@@ -17,9 +17,9 @@
     },
     "phone": {
       "type": "string",
-      "required": true,
+      "default": "+48 XXX XXX XXX",
       "regex": "^\\+48 \\d{3} \\d{3} \\d{3}$",
-      "default": "+48 XXX XXX XXX"
+      "required": true
     },
     "operationalArea": {
       "type": "customField",
@@ -54,18 +54,10 @@
       "type": "text",
       "required": true
     },
-    "UUID": {
-      "type": "customField",
-      "required": true,
-      "customField": "plugin::strapi-advanced-uuid.uuid",
-      "options": {
-        "disable-regenerate": true
-      }
-    },
     "image": {
       "allowedTypes": [
-        "images",
-        "files"
+        "files",
+        "images"
       ],
       "type": "media",
       "multiple": false,
