@@ -5,8 +5,7 @@ module.exports = ({env}) => [
 	{
 		name: 'strapi::cors',
 		config: {
-			// origin: '*',
-			origin: env.array('ALLOWED_DOMAINS'),
+			origin: env.array('ALLOWED_DOMAINS', ['http://localhost:5173']),
 			keepHeaderOnError: true,
 		},
 	},
