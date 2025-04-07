@@ -386,6 +386,7 @@ export interface ApiCaseCase extends Struct.CollectionTypeSchema {
         'blog-component.text-block',
         'blog-component.image',
         'blog-component.pure-text',
+        'blog-component.image-contain',
       ]
     >;
     cover: Schema.Attribute.Media<'images' | 'files'> &
@@ -428,6 +429,7 @@ export interface ApiFeedFeed extends Struct.CollectionTypeSchema {
         'blog-component.text-block',
         'blog-component.image',
         'blog-component.pure-text',
+        'blog-component.image-contain',
       ]
     >;
     cover: Schema.Attribute.Media<'images' | 'files'> &

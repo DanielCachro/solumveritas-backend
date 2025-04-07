@@ -13,6 +13,19 @@ export interface BlogComponentImage extends Struct.ComponentSchema {
   };
 }
 
+export interface BlogComponentImageContain extends Struct.ComponentSchema {
+  collectionName: 'components_blog_component_image_contains';
+  info: {
+    description: '';
+    displayName: 'ImageContain';
+    icon: 'collapse';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+  };
+}
+
 export interface BlogComponentPureText extends Struct.ComponentSchema {
   collectionName: 'components_blog_component_pure_texts';
   info: {
@@ -41,6 +54,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blog-component.image': BlogComponentImage;
+      'blog-component.image-contain': BlogComponentImageContain;
       'blog-component.pure-text': BlogComponentPureText;
       'blog-component.text-block': BlogComponentTextBlock;
     }

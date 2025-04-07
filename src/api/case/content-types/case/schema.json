@@ -36,7 +36,8 @@
       "components": [
         "blog-component.text-block",
         "blog-component.image",
-        "blog-component.pure-text"
+        "blog-component.pure-text",
+        "blog-component.image-contain"
       ]
     },
     "description": {
