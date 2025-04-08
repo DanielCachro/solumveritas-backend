@@ -486,6 +486,7 @@ export interface ApiMemberMember extends Struct.CollectionTypeSchema {
       Schema.Attribute.CustomField<
         'plugin::multi-select.multi-select',
         [
+          'Ca\u0142a Polska',
           'Dolno\u015Bl\u0105skie  ',
           'Kujawsko-Pomorskie  ',
           'Lubelskie  ',

@@ -25,6 +25,7 @@
       "type": "customField",
       "default": "[]",
       "options": [
+        "Cała Polska",
         "Dolnośląskie  ",
         "Kujawsko-Pomorskie  ",
         "Lubelskie  ",
@@ -55,13 +56,13 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     }
   }
 }
